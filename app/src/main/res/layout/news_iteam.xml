@@ -37,12 +37,14 @@
                 android:layout_marginBottom="5dp">
 
             <TextView
+                    android:id="@+id/news_author"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     style="@style/news_publisher"
                     tools:text="Jim Kwik"/>
             <TextView
+                    android:id="@+id/news_date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
