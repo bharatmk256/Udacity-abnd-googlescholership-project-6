@@ -1,8 +1,6 @@
 package com.example.bharat.news;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,12 +11,11 @@ import android.widget.TextView;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.SimpleTimeZone;
 
 
 public class NewsAdapter extends ArrayAdapter<News> {
 
-    private static final String LOCATION_SEPARATOR ="of";
+    //private static final String LOCATION_SEPARATOR ="of";
 
     public NewsAdapter(Context context, List<News> newses){
         super(context,0,newses);
@@ -54,11 +51,13 @@ public class NewsAdapter extends ArrayAdapter<News> {
         titleVies.setText(currentNews.getmTitle());
 
         TextView publisherView = (TextView) listItemView.findViewById(R.id.news_author);
+        //for name of author but it will show no author
         publisherView.setText(currentNews.getmAuthor());
 
-
-
-
+        TextView dateView = (TextView) listItemView.findViewById(R.id.news_date);
+        String formattedDate = dateFormat(currentNews.getmDate());
+        //for formatted date to show when it's published
+        dateView.setText(formattedDate);
 
         return listItemView;
     }

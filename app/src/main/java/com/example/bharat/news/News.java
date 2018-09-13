@@ -31,7 +31,7 @@ public class News {
     public String getmUrl(){
         return mUrl;
     }
-    private String getmDate(){
+    public String getmDate(){
         return mDate;
     }
 
