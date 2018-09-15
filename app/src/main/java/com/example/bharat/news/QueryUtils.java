@@ -112,7 +112,7 @@ public final class QueryUtils {
                 newses.add(news);
             }
         } catch (JSONException e) {
-            Log.e("QueryUtils", "Problem parsing the earthquake JSON results", e);
+            Log.e("QueryUtils", "Problem parsing the NEWS JSON results", e);
         }
         return newses;
     }
