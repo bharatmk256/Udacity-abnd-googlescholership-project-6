@@ -98,7 +98,7 @@ public final class QueryUtils {
         try {
             JSONObject baseJsonResponse = new JSONObject(newsJSON);
             JSONObject responseObject = baseJsonResponse.getJSONObject("response");
-            JSONArray newsArray = baseJsonResponse.getJSONArray("results");
+            JSONArray newsArray = responseObject.getJSONArray("results");
 
             for (int i = 0; i < newsArray.length(); i++){
                 JSONObject currentNews = newsArray.getJSONObject(i);

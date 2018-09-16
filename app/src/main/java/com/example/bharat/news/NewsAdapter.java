@@ -38,7 +38,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_main, parent, false);
+                    R.layout.news_iteam, parent, false);
         }
         News currentNews = getItem(position);
 
