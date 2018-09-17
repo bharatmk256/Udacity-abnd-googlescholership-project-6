@@ -100,15 +100,22 @@ public final class QueryUtils {
             JSONObject responseObject = baseJsonResponse.getJSONObject("response");
             JSONArray newsArray = responseObject.getJSONArray("results");
 
+
             for (int i = 0; i < newsArray.length(); i++){
                 JSONObject currentNews = newsArray.getJSONObject(i);
+                JSONArray tags = currentNews.optJSONArray("tags");
                 String  newsTitle = currentNews.getString("webTitle");
                 String topic = currentNews.getString("sectionName");
-                String publisherName = "Not Available";
+                String authorName = "";
                 String url = currentNews.getString("webUrl");
                 String date = currentNews.getString("webPublicationDate");
 
-                News news = new News(newsTitle,topic,publisherName,url,date);
+                if (tags.length()>0){
+                    JSONObject jsonObject = tags.optJSONObject(0);
+                    authorName = jsonObject.getString("webTitle");
+                }
+
+                News news = (new News(newsTitle,topic,authorName,url,date));
                 newses.add(news);
             }
         } catch (JSONException e) {

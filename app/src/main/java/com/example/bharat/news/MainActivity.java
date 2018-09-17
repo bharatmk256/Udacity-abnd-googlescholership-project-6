@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
     implements LoaderManager.LoaderCallbacks<List<News>> {
     private static final String LOG_TAG = MainActivity.class.getName();
 
-    private static final String THEGUARDIAN_NEWS_REQUEST_URL = "https://content.guardianapis.com/search?api-key=f74bf62e-74fd-4b75-b6ba-3670d1188b36";
+    private static final String THEGUARDIAN_NEWS_REQUEST_URL = "https://content.guardianapis.com/search?api-key=f74bf62e-74fd-4b75-b6ba-3670d1188b36&show-tags=contributor";
 
     private static final int NEWS_LOADER_ID = 1;
 
