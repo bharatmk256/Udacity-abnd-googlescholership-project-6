@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">News</string>
-    <string name="no_internet">Wew No Internet Connection ?? Why??.</string>
+    <string name="no_internet">Opps. No Internet Connection ??</string>
     <string name="no_news">No News Found</string>
+    <string name="settings">settings</string>
+    <string name="Settings_title">News Settings</string>
+    <!--contry wise-->
+    <string name="Settings_Country_title">Country</string>
+    <string name="Settings_Country_key" translatable="false">country_name</string>
+    <string name="Settings_Country_By_Default" translatable="false">world</string>
+    <!--page size-->
+    <string name="Settings_Page_Size_Title">Page Size</string>
+    <string name="Settings_Page_Size_key">pageSize</string>
+    <integer name="Settings_Page_Size_By_Default">10</integer>
+    <!--topic-->
+    <string name="Settings_Order_title">Order_By</string>
+    <string name="Settings_Order_By_Key" translatable="false">order_by</string>
+    <string name="Settings_Order_By_Default" translatable="false">newest</string>
+    <!--sort for new-->
+    <string name="Settings_Order_By_Newest_Title">Newest</string>
+    <string name="Settings_Order_By_Newest_key" translatable="false">newest</string>
+    <!--sort for old-->
+    <string name="Settings_Order_By_Oldest_Title">Older</string>
+    <string name="Setting_Order_By_Oldest_key" translatable="false">oldest</string>
+
+
 </resources>

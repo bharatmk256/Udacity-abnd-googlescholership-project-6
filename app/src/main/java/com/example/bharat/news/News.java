@@ -2,36 +2,38 @@ package com.example.bharat.news;
 
 public class News {
 
+
     private String mTitle;
-
     private String mTopic;
-
     private String mAuthor;
-
     private String mUrl;
-
     private String mDate;
 
-    public News(String title, String topic, String author, String url, String  date){
+    public News(String title, String topic, String author, String url, String date) {
         mTitle = title;
         mTopic = topic;
         mAuthor = author;
         mUrl = url;
         mDate = date;
     }
-    public String getmTitle(){
+
+    public String getmTitle() {
         return mTitle;
     }
-    public String getmTopic(){
+
+    public String getmTopic() {
         return mTopic;
     }
-    public String getmAuthor(){
+
+    public String getmAuthor() {
         return mAuthor;
     }
-    public String getmUrl(){
+
+    public String getmUrl() {
         return mUrl;
     }
-    public String getmDate(){
+
+    public String getmDate() {
         return mDate;
     }
 

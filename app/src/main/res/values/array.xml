@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Settings_Order_By_Title">
+        <item>@string/Settings_Order_By_Newest_Title</item>
+        <item>@string/Settings_Order_By_Oldest_Title</item>
+    </string-array>
+    <string-array name="Settings_Order_By_Key">
+        <item>@string/Settings_Order_By_Newest_key</item>
+        <item>@string/Setting_Order_By_Oldest_key</item>
+    </string-array>
+</resources>

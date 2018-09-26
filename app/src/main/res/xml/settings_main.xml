@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/Settings_title">
+    <ListPreference
+            android:defaultValue="@string/Settings_Order_By_Default"
+            android:entries="@array/Settings_Order_By_Title"
+            android:entryValues="@array/Settings_Order_By_Key"
+            android:key="@string/Settings_Order_By_Key"
+            android:title="@string/Settings_Order_title"/>
+    <EditTextPreference
+            android:defaultValue="@string/Settings_Country_By_Default"
+            android:inputType="text"
+            android:key="@string/Settings_Country_key"
+            android:title="@string/Settings_Country_title"/>
+</PreferenceScreen>
